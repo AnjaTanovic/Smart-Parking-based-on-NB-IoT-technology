@@ -1,0 +1,57 @@
+html{
+	font-family: arial, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 600;
+	background-image: linear-gradient(to left, #000000, #A30D0D);
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	padding-bottom: 0px;
+}
+h2 {
+	font-size: 15px;
+	font-weight: 500;
+	color: black;
+	background-clip: text;
+	-webkit-background-clip: text;
+	padding-top: 0px;
+}
+
+body{
+	background-image: url("parking_background.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+}
+
+.parking-grid {
+	display: grid;
+	grid-template-columns: repeat(21, 1fr); /* $cars_per_row = 20 */
+	grid-gap: 1px; /* Adjust the gap between parking spots as needed */
+}
+
+.parking-h-line {
+	border-bottom-radius: 10px;
+	padding-bottom: 10px;
+	padding-top: 17px;
+	width: 70%;
+	height: 10%;
+}
+
+.parking-v-line {
+	padding-left: 5px;
+	width: 30%; 
+	height: 90%; 
+}
+
+.parking-spot {
+	width: 70%; 
+	height: auto; 
+}
+
+
+
